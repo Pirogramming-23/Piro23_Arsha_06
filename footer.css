@@ -14,7 +14,7 @@
 #Subscribe-content {
     margin: -24px -12px 0;
     display: flex;
-    gap: 137px;
+    gap: 130px;
     align-items: center;
     justify-content: space-between;
 }
@@ -70,4 +70,149 @@
 #Subscribe-img > div > img {
     max-width: 100%;
     height: auto;
+}
+/* RECENT BLOG POSTS */
+#recent-blog-post {
+    color: #444444;
+    font: 16px "Open Sans", system-ui;
+    background: #f5f6f8;
+    padding: 60px 0;
+}
+#recent-header {
+    margin: 0 10px;
+    padding: 0 12px 60px;
+    text-align: center;
+}
+#recent-header > h2 {
+    color: #37517E;
+    font-size: 32px;
+    font-weight: 700;
+    margin: 0 0 20px;
+    padding: 0 0 20px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    position: relative;
+}
+#recent-header > h2::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 160px;
+    height: 1px;
+    background: color-mix(in srgb, #444444, transparent 60%);
+    left: 0;
+    right: 0;
+    bottom: 1px;
+    margin: auto;
+}
+#recent-header > h2::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #47b2e4;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+#recent-header > p {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+.recent-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.recent-content-child {
+    margin: 48px 0 0;
+    padding: 0 12px;
+}
+.recent-content-child > div {
+    background: #ffffff;
+}
+.recent-img {
+    position: relative;
+}
+.recent-img > img {
+    width: 100%;
+    height: auto;
+}
+.recent-img > span {
+    position: absolute;
+    right: 0;
+    bottom: 4px;
+    background-color: #47b2e4;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 13px;
+    padding: 6px 12px;
+    font-weight: 500;
+}
+.recent-text {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+.recent-text > h3 {
+    color: #37517E;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0 0 15px;
+    transition: 0.3s;
+}
+.recent-text > div {
+    align-items: center;
+    display: flex;
+}
+.recent-shape {
+    font-size: 16px;
+    color: #47b2e4;
+}
+.recent-shape::before {
+    content: "\f4e1";
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    vertical-align: -.125em;
+}
+.recent-name {
+    font-size: 15px;
+    color: color-mix(in srgb, #444444, transparent 50%);
+    padding-left: 8px;
+}
+.recent-line {
+    font-size: 15px;
+    color: rgba(0, 0, 0, .5);
+    padding: 0 16px;
+}
+.recent-hr {
+    color: color-mix(in srgb, #444444, transparent 80%);
+    margin: 20px 0;
+}
+.recent-readmore {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    line-height: 1;
+    text-decoration: none;
+    color: color-mix(in srgb, #444444, transparent 40%);
+    transition: 0.3s;
+}
+.recent-arrow {
+    line-height: 0;
+    margin-left: 6px;
+    font-size: 16px;
+}
+.recent-arrow::before {
+    content: "\f138";
+    display: inline-block;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
 }
