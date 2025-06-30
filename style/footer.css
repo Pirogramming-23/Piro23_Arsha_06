@@ -1,0 +1,238 @@
+@import "./contact.css";
+#footer {
+    color: #444444;
+    padding-bottom: 50px;
+    font: 14px "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    position: relative;
+}
+#footer-join {
+    text-align: center;
+    background-color: color-mix(in srgb, #37517e, transparent 95%);
+    padding: 50px 0;
+}
+.footer-join-container {
+    width: 100%;
+    padding: 0 12px;
+    padding-right: calc(1.5rem * 0.5);
+    padding-left: calc(1.5rem * 0.5);
+    margin: 0 auto;
+}
+.footer-join-container > div {
+    display: flex;
+    justify-content: center;
+}
+.footer-join-text {
+    width: 480px;
+    padding: 0 12px;
+    padding-right: calc(1.5rem * 0.5);
+    padding-left: calc(1.5rem * 0.5);
+    margin-top: 0;
+}
+.footer-join-text > h4 {
+    font: 24px "Jost", sans-serif;
+    color: #37517e;
+    font-weight: bold;
+    position: relative;
+    margin: 0 0 8px;
+    padding: 0 0 12px;
+}
+.footer-join-text > p {
+    font: 14px "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    margin: 0 0 16px;
+}
+.footer-join-text > form > div {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    padding: 6px 8px;
+    position: relative;
+    background-color: color-mix(in srgb, #ffffff, transparent 50%);
+    border: 1px solid color-mix(in srgb, #444444, transparent 90%);
+    box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.1);
+    display: flex;
+    transition: 0.3s;
+    border-radius: 50px;
+}
+.footer-form:focus-within {
+    border: 1px solid #47b2e4;
+}
+.footer-form > input:first-of-type {
+    width: 100%;
+    border: none;
+    padding: 4px;
+    color: #444444;
+    background-color: color-mix(in srgb, #ffffff, transparent 50%);
+}
+.footer-form > input[type=email]:focus-visible {
+    outline: none;
+}
+.footer-form >input:last-of-type {
+    border: none;
+    font-size: 16px;
+    padding: 0 20px;
+    margin: -7px -8px -7px 0;
+    color: #ffffff;
+    background-color: #47b2e4;
+    border-radius: 50px;
+    transition: 0.3s;
+}
+.footer-form > input[type=submit]:hover {
+    background: color-mix(in srgb, #47b2e4, transparent 20%);
+}
+#footer-middle {
+    width: 100%;
+    padding-right: calc(1.5rem * 0.5);
+    padding-left: calc(1.5rem * 0.5);
+    padding: 50px 0 0;
+    margin: 0 auto;
+}
+#footer-middle > div {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * 1.5rem);
+    margin-right: calc(-.5 * 1.5rem);
+    margin-left: calc(-.5 * 1.5rem);
+    justify-content: center;
+}
+.footer-middle-div-side {
+    margin: 24px 0 0;
+    padding: 0 12px;
+}
+#footer-arsha {
+    color: #37517E;
+    font: 28px "Jost", sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+}
+.footer-arsha-text {
+    padding: 16px 0 0;
+    font: 14px "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.footer-arsha-text > p:first-of-type, .footer-arsha-text > p:nth-of-type(2) {
+    margin: 0 0 5px;
+}
+.footer-arsha-text > p:nth-of-type(3) {
+    margin: 16px 0 5px;
+}
+.footer-arsha-text > p:last-of-type {
+    margin: 0 0 5px;
+}
+.footer-middle-div-center {
+    margin: 24px 0 30px;
+    padding: 0 12px;
+}
+.footer-middle-h4 {
+    color: #37517E;
+    font: 16px "Jost", sans-serif;
+    font-weight: bold;
+    margin: 0 0 8px;
+    padding: 0 0 12px;
+    position: relative;
+}
+.footer-middle-menu {
+    list-style: none;
+    padding: 0;
+}
+.footer-middle-menu > li:first-of-type {
+    padding: 0 0 10px;
+}
+.footer-middle-menu > li:nth-of-type(2), .footer-middle-menu > li:nth-of-type(3), .footer-middle-menu > li:last-of-type {
+    padding: 10px 0;
+}
+.footer-middle-menu > li > a {
+    font: 14px "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    text-decoration: none;
+    color: color-mix(in srgb, #444444, transparent 20%);
+    transition: 0.2s ease-in-out;
+}
+.footer-middle-menu > li > a:hover {
+    color: #47b2e4;
+}
+.footer-middle-menu > li > a > span {
+    color: #47b2e4;
+}
+.footer-blue > svg {
+    width: 12px;
+    height: 12px;
+}
+.footer-middle-div-side > p {
+    font: 14px "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    margin: 0 0 16px;
+    color: #444444;
+}
+.footer-social-link {
+    display: flex;
+}
+.footer-social-link > a {
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid color-mix(in srgb, #444444, transparent 50%);
+    font-size: 16px;
+    color: color-mix(in srgb, #444444, transparent 20%);
+    margin-right: 10px;
+    transition: 0.3s;
+    position: relative;
+}
+.footer-svg {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    left: 12px;
+    top: 12px;
+}
+.footer-social-link > a:hover {
+    color: #47b2e4;
+    border-color: #47b2e4;
+}
+#footer-bottom {
+    margin: 24px 11.5px 0;
+    padding: 25px 12px;
+    color: #444444;
+    font: 14px "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    border-top: 1px solid color-mix(in srgb, #444444, transparent 90%);
+    text-align: center;
+}
+#footer-bottom > p {
+    margin: 0;
+    padding: 0;
+}
+#footer-bottom > div {
+    margin: 6px 0 0;
+}
+#footer-bottom > div > a {
+    text-decoration: none;
+    color: #47b2e4;
+    transition: 0.3s;
+}
+#footer-bottom > div > a:hover {
+    color: color-mix(in srgb, #47b2e4, transparent 25%);
+}
+#footer-scroll {
+    visibility: visible;
+    opacity: 1;
+    bottom: 15px;
+    position: fixed;
+    right: 15px;
+    background-color: #47b2e4;
+    width: 44px;
+    height: 44px;
+    border-radius: 50px;
+    transition: all 0.4s;
+    align-items: center;
+}
+#footer-scroll > svg {
+    color: #ffffff;
+    font-size: 24px;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+#footer-scroll:hover {
+    background-color: color-mix(in srgb, #47b2e4, transparent 20%);
+}
