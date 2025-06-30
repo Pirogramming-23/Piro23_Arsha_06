@@ -3,6 +3,7 @@
     color: #444444;
     padding-bottom: 50px;
     font: 14px "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    position: relative;
 }
 #footer-join {
     text-align: center;
@@ -12,11 +13,20 @@
 .footer-join-container {
     width: 100%;
     padding: 0 12px;
+    padding-right: calc(1.5rem * 0.5);
+    padding-left: calc(1.5rem * 0.5);
     margin: 0 auto;
 }
+.footer-join-container > div {
+    display: flex;
+    justify-content: center;
+}
 .footer-join-text {
-    width: 100%;
+    width: 480px;
     padding: 0 12px;
+    padding-right: calc(1.5rem * 0.5);
+    padding-left: calc(1.5rem * 0.5);
+    margin-top: 0;
 }
 .footer-join-text > h4 {
     font: 24px "Jost", sans-serif;
@@ -42,12 +52,18 @@
     transition: 0.3s;
     border-radius: 50px;
 }
+.footer-form:focus-within {
+    border: 1px solid #47b2e4;
+}
 .footer-form > input:first-of-type {
     width: 100%;
     border: none;
     padding: 4px;
     color: #444444;
     background-color: color-mix(in srgb, #ffffff, transparent 50%);
+}
+.footer-form > input[type=email]:focus-visible {
+    outline: none;
 }
 .footer-form >input:last-of-type {
     border: none;
@@ -63,11 +79,18 @@
     background: color-mix(in srgb, #47b2e4, transparent 20%);
 }
 #footer-middle {
+    width: 100%;
+    padding-right: calc(1.5rem * 0.5);
+    padding-left: calc(1.5rem * 0.5);
     padding: 50px 0 0;
     margin: 0 auto;
 }
 #footer-middle > div {
     display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * 1.5rem);
+    margin-right: calc(-.5 * 1.5rem);
+    margin-left: calc(-.5 * 1.5rem);
     justify-content: center;
 }
 .footer-middle-div-side {

@@ -12,10 +12,20 @@
     margin-right: auto;
     text-align: center;
     position: relative;
+    animation: slide 1s ease-out forwards;
+    animation-delay: 1s;
+    opacity: 0;
+    transform: translateY(50px);
+}
+#contact-information, #contact-text-and-img {
+    animation: slide 1s ease-out forwards;
+    animation-delay: 2s;
+    opacity: 0;
+    transform: translateY(50px);
 }
 .contact-title {
     color: #37517E;
-    font: 32px Jost, sans-serif;
+    font: 32px "Jost", sans-serif;
     font-weight: 700;
     margin: 0 0 20px;
     padding: 0 0 20px;
@@ -55,15 +65,23 @@
 #contact-content {
     padding: 0 12px;
     margin: 0 auto;
+    box-sizing: border-box;
 }
-#contact-content > div{
+#contact-content > div {
     display: flex;
+    justify-content: center;
+    align-items: stretch;
 }
 .contact-contents {
+    height: 100%;
     margin: 24px 0 0;
     padding: 0 12px;
+    box-sizing: border-box;
 }
-.contact-contents-div { 
+#contact-text-and-img {
+    width: 58%;
+}
+.contact-contents-div {
     padding: 30px;
     background: #ffffff;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
@@ -81,6 +99,24 @@
     display: flex;
     flex-direction: row;
 }
+.contact-menu:first-of-type {
+    animation: slide 1s ease-out forwards;
+    animation-delay: 3s;
+    opacity: 0;
+    transform: translateY(50px);
+}
+.contact-menu:nth-last-of-type(2) {
+    animation: slide 1s ease-out forwards;
+    animation-delay: 3.5s;
+    opacity: 0;
+    transform: translateY(50px);
+}
+.contact-menu:last-of-type {
+    animation: slide 1s ease-out forwards;
+    animation-delay: 4s;
+    opacity: 0;
+    transform: translateY(50px);
+}
 .contact-icon {
     font-size: 20px;
     color: #47b2e4;
@@ -94,9 +130,11 @@
     transition: all 0.2s ease-in-out;
     margin-right: 15px;
 }
-.contact-icon:hover {
-    background: #47b2e4;
-    color: #ffffff;
+.contact-menu:hover {
+    .contact-icon {
+        background: #47b2e4;
+        color: #ffffff;
+    }
 }
 .contact-text > h3 {
     color: #37517E;
@@ -124,6 +162,7 @@
     flex: 0 0 auto;
     margin: 24px 0 0;
     padding: 0 12px;
+    box-sizing: border-box;
 }
 .contact-right-info > label {
     display: inline-block;
@@ -132,7 +171,7 @@
 .contact-info-top {
     width: 50%;
 }
-.contact-info-bottom {
+.contact-right-info:not(.contact-info-top) {
     width: 100%;
 }
 .contact-right-info > input, .contact-right-info > textarea {
@@ -143,12 +182,25 @@
     line-height: 1.5;
     font-weight: 400;
     border: 1px solid #dee2e6;
+    width: 100%;
+    box-sizing: border-box;
+}
+.contact-right-info > input:focus, .contact-right-info > textarea:focus {
+    outline: none;
+}
+input[type=text]:focus-visible, textarea:focus-visible, input[type=email]:focus-visible {
+    border-color: #47b2e4;
+}
+.contact-right-info > textarea {
+    resize: vertical;
+    min-height: calc(1.5em + .75rem + calc(1px * 2));
 }
 #contact-submit {
     box-sizing: border-box;
-    width: 500px;
+    width: 100%;
     height: 44px;
     text-align: center;
+    justify-content: center;
     margin: 24px 0 0;
     padding: 0 12px;
 }
