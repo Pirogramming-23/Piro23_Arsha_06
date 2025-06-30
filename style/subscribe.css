@@ -1,0 +1,78 @@
+#Subscribe {
+    box-sizing: border-box;
+    display: block;
+    color: #444444;
+    background-color: #ffffff;
+    padding: 60px 0;
+}
+#Subscribe-container {
+    padding: 80px 80px 0 80px;
+    background: color-mix(in srgb, #444444, transparent 96%);
+    border-radius: 15px;
+    margin: 0 15.5px;
+}
+#Subscribe-content {
+    margin: -24px -12px 0;
+    display: flex;
+    gap: 130px;
+    align-items: center;
+    justify-content: space-between;
+}
+#Subscribe-text {
+    margin: 24px 0 0;
+    padding: 0 12px;
+}
+#Subscribe-text > div > h2 {
+    color: #37517E;
+    font: 40px Jost, sans-serif;
+    font-weight: 700;
+    margin: 0 0 16px;
+}
+#Subscribe-text > div > p {
+    display: block;
+    color: #444444;
+    margin: 0 0 32px;
+    font: 17.6px "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+#Subscribe-form {
+    display: flex;
+    color: #444444;
+    font: 16px "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    margin: 0 0 16px;
+}
+#Subscribe-form > input {
+    box-sizing: border-box;
+    background: #ffffff;
+    padding: 6px 12px 6px 20px;
+    width: 251.8px;
+    height: 50px;
+    border-radius: 25px 0 0 25px;
+    border: 1px solid #47b2e4;
+    position: relative;
+}
+#Subscribe-form > button {
+    color: #ffffff;
+    font-weight: 600;
+    font: 16px "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    background: #47b2e4;
+    margin: 0 0 0 -1px;
+    padding: 0 30px;
+    height: 50px;
+    border-radius: 0 25px 25px 0;
+    border: none;
+    position: relative;
+    transition: all 0.3s ease;
+}
+#Subscribe-form > button:hover {
+    background-color: color-mix(in srgb, #47b2e4, black 10%);
+    border-color: color-mix(in srgb, #47b2e4, black 10%);
+}
+#Subscribe-img {
+    display: block;
+    margin: 24px 0px 0px;
+    padding: 0px 12px;
+}
+#Subscribe-img > div > img {
+    max-width: 100%;
+    height: auto;
+}

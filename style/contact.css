@@ -1,0 +1,160 @@
+@import "./recent.css";
+#contact {
+    box-sizing: border-box;
+    padding: 60px 0;
+    font: 16px "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    background: #ffffff;
+}
+#contact-container {
+    width: 960px;
+    padding: 0 12px 60px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    position: relative;
+}
+.contact-title {
+    color: #37517E;
+    font: 32px Jost, sans-serif;
+    font-weight: 700;
+    margin: 0 0 20px;
+    padding: 0 0 20px;
+    position: relative;
+    text-transform: uppercase;
+}
+.contact-title::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 160px;
+    height: 1px;
+    background: color-mix(in srgb, #444444, transparent 60%);
+    left: 0;
+    right: 0;
+    bottom: 1px;
+    margin: auto;
+}
+.contact-title::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #47b2e4;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+#contact-container > p {
+    color: #444444;
+    font: 16px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+#contact-content {
+    width: 960px;
+    padding: 0 12px;
+    margin: 0 auto;
+}
+#contact-content > div{
+    display: flex;
+}
+.contact-contents {
+    margin: 24px 0 0;
+    padding: 0 12px;
+}
+.contact-contents-div { 
+    padding: 30px;
+    background: #ffffff;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border-top: 3px solid #47b2e4;
+    border-bottom: 3px solid #47b2e4;
+    padding: 30px;
+}
+.contact-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+.contact-menu {
+    width: 316px;
+    padding: 0 0 40px;
+    display: flex;
+    flex-direction: row;
+}
+.contact-icon {
+    font-size: 20px;
+    color: #47b2e4;
+    background: color-mix(in srgb, #47b2e4, transparent 92%);
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+    margin-right: 15px;
+}
+.contact-icon::before {
+    content: "\f3e8";
+}
+.contact-text > h3 {
+    color: #37517E;
+    font: 18px "Jost", sans-serif;
+    font-weight: 700;
+    margin: 0 0 5px;
+}
+.contact-text > p {
+    color: #444444;
+    font: 14px "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    margin: 0;
+}
+#contact-iframe {
+    border: none;
+    width: 100%;
+    height: 270px
+}
+.contact-contents > form {
+    color: #444444;
+    background: #ffffff;
+    padding: 30px;
+    font: 16px "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.contact-right-info {
+    margin: 24px 0 0;
+    padding: 0 12px;
+}
+.contact-right-info > label {
+    display: inline-block;
+    padding: 0 0 8px;
+}
+.contact-info-top {
+    width: 50%;
+    flex: 0 0 auto;
+}
+.contact-right-info > input, .contact-right-info > textarea {
+    padding: 10px 15px;
+    box-shadow: none;
+    color: #444444;
+    background-color: color-mix(in srgb, #ffffff, transparent 50%);
+    line-height: 1.5;
+    font-weight: 400;
+    border: 1px solid #dee2e6;
+}
+#contact-submit {
+    box-sizing: border-box;
+    width: 500px;
+    height: 44px;
+    text-align: center;
+    margin: 24px 0 0;
+    padding: 0 12px;
+}
+#contact-submit > button {
+    color: #ffffff;
+    background: #47b2e4;
+    border: 0;
+    padding: 10px 30px;
+    transition: 0.4s;
+    border-radius: 50px;
+    cursor: pointer;
+}
