@@ -1,4 +1,501 @@
 @import "./contact.css";
+#Subscribe {
+    box-sizing: border-box;
+    display: block;
+    color: #444444;
+    background-color: #ffffff;
+    padding: 60px 0;
+    animation: slide 1s forwards;
+    transform: translateY(50px);
+}
+#Subscribe-container {
+    padding: 80px 80px 0 80px;
+    background: color-mix(in srgb, #444444, transparent 96%);
+    border-radius: 15px;
+    margin: 0 15.5px;
+    animation: slide 1s ease-out forwards;
+    animation-delay: 1s;
+    opacity: 0;
+    transform: translateY(50px);
+}
+#Subscribe-content {
+    margin: -24px -12px 0;
+    display: flex;
+    gap: 130px;
+    align-items: center;
+    justify-content: space-between;
+}
+#Subscribe-text {
+    margin: 24px 0 0;
+    padding: 0 12px;
+    animation: slide 1s ease-out forwards;
+    animation-delay: 2s;
+    opacity: 0;
+    transform: translateY(50px);
+}
+#Subscribe-text > div > h2 {
+    color: #37517E;
+    font: 40px Jost, sans-serif;
+    font-weight: 700;
+    margin: 0 0 16px;
+}
+#Subscribe-text > div > p {
+    display: block;
+    color: #444444;
+    margin: 0 0 32px;
+    font: 17.6px "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+#Subscribe-form {
+    width: 100%;
+    display: flex;
+    align-items: stretch;
+    color: #444444;
+    font: 16px "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    margin: 0 0 16px;
+    animation: slide 1s ease-out forwards;
+    animation-delay: 3s;
+    opacity: 0;
+    transform: translateY(50px);
+}
+#Subscribe-form > input {
+    box-sizing: border-box;
+    background: #ffffff;
+    padding: 6px 12px 6px 20px;
+    width: 251.8px;
+    height: 50px;
+    border-radius: 25px 0 0 25px;
+    border: 1px solid #47b2e4;
+    position: relative;
+}
+#Subscribe-form > input:focus-visible {
+    outline: none;
+}
+#Subscribe-form > button {
+    color: #ffffff;
+    font-weight: 600;
+    font: 16px "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    background: #47b2e4;
+    margin: 0 0 0 -1px;
+    padding: 0 30px;
+    height: 50px;
+    border-radius: 0 25px 25px 0;
+    border: none;
+    position: relative;
+    transition: all 0.3s ease;
+}
+#Subscribe-form > button:hover {
+    background-color: color-mix(in srgb, #47b2e4, black 10%);
+    border-color: color-mix(in srgb, #47b2e4, black 10%);
+}
+#Subscribe-img {
+    display: block;
+    margin: 24px 0px 0px;
+    padding: 0px 12px;
+    animation: slide 1s ease-out forwards;
+    animation-delay: 2s;
+    opacity: 0;
+    transform: translateY(50px);
+}
+#Subscribe-img > div > img {
+    max-width: 100%;
+    height: auto;
+}
+@keyframes slide {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  50% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* recent */
+#recent-blog-post {
+    color: #444444;
+    font: 16px "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    background: #f5f6f8;
+    padding: 60px 0;
+}
+#recent-header {
+    margin: 0 10px;
+    padding: 0 12px 60px;
+    text-align: center;
+    animation: slide 1s ease-out forwards;
+    animation-delay: 1s;
+    opacity: 0;
+    transform: translateY(50px);
+}
+#recent-header > h2 {
+    color: #37517E;
+    font-size: 32px;
+    font-weight: 700;
+    margin: 0 0 20px;
+    padding: 0 0 20px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    position: relative;
+}
+#recent-header > h2::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 160px;
+    height: 1px;
+    background: color-mix(in srgb, #444444, transparent 60%);
+    left: 0;
+    right: 0;
+    bottom: 1px;
+    margin: auto;
+}
+#recent-header > h2::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #47b2e4;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+#recent-header > p {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+.recent-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.recent-content-child {
+    margin: 48px 0 0;
+    padding: 0 12px;
+}
+#recent-delay-1 {
+    animation: slide 1s ease-out forwards;
+    animation-delay: 2.2s;
+    opacity: 0;
+    transform: translateY(50px);
+}
+#recent-delay-2 {
+    animation: slide 1s ease-out forwards;
+    animation-delay: 2.25s;
+    opacity: 0;
+    transform: translateY(50px);
+}
+#recent-delay-3 {
+    animation: slide 1s ease-out forwards;
+    animation-delay: 2.3s;
+    opacity: 0;
+    transform: translateY(50px);
+}
+.recent-content-child > div {
+    background: #ffffff;
+    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.1);
+}
+.recent-img {
+    position: relative;
+    overflow: hidden;
+}
+.recent-img > img {
+    width: 100%;
+    height: auto;
+    transition: 0.5s;
+}
+.recent-content-child > div:hover {
+    .recent-img > img {
+        transform: scale(1.1);
+    }
+    .recent-text > h3, .recent-text > a {
+        color: #47b2e4;
+    }
+}
+.recent-img > span {
+    position: absolute;
+    right: 0;
+    bottom: 4px;
+    background-color: #47b2e4;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 13px;
+    padding: 6px 12px;
+    font-weight: 500;
+}
+.recent-text {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+.recent-text > h3 {
+    color: #37517E;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0 0 15px;
+    transition: 0.3s;
+}
+.recent-text > div {
+    align-items: center;
+    display: flex;
+}
+.recent-text > div > div {
+    display: flex;
+}
+.recent-shape {
+    font-size: 16px;
+    color: #47b2e4;
+}
+.recent-name {
+    font-size: 15px;
+    color: color-mix(in srgb, #444444, transparent 50%);
+    padding-left: 8px;
+}
+.recent-line {
+    font-size: 15px;
+    color: rgba(0, 0, 0, .5);
+    padding: 0 16px;
+}
+#recent-hr {
+    color: color-mix(in srgb, #444444, transparent 80%);
+    margin: 20px 0;
+}
+.recent-readmore {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    line-height: 1;
+    text-decoration: none;
+    color: color-mix(in srgb, #444444, transparent 40%);
+    transition: 0.3s;
+}
+.recent-svg {
+    line-height: 0;
+    margin-left: 6px;
+    font-size: 16px;
+}
+/* contact */
+#contact {
+    box-sizing: border-box;
+    padding: 60px 0;
+    font: 16px "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    background: #ffffff;
+}
+#contact-container {
+    width: 960px;
+    padding: 0 12px 60px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    position: relative;
+    animation: slide 1s ease-out forwards;
+    animation-delay: 1s;
+    opacity: 0;
+    transform: translateY(50px);
+}
+#contact-information, #contact-text-and-img {
+    animation: slide 1s ease-out forwards;
+    animation-delay: 2s;
+    opacity: 0;
+    transform: translateY(50px);
+}
+.contact-title {
+    color: #37517E;
+    font: 32px "Jost", sans-serif;
+    font-weight: 700;
+    margin: 0 0 20px;
+    padding: 0 0 20px;
+    position: relative;
+    text-transform: uppercase;
+}
+.contact-title::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 160px;
+    height: 1px;
+    background: color-mix(in srgb, #444444, transparent 60%);
+    left: 0;
+    right: 0;
+    bottom: 1px;
+    margin: auto;
+}
+.contact-title::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #47b2e4;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+#contact-container > p {
+    color: #444444;
+    font: 16px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+#contact-content {
+    padding: 0 12px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+#contact-content > div {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+}
+.contact-contents {
+    height: 100%;
+    margin: 24px 0 0;
+    padding: 0 12px;
+    box-sizing: border-box;
+}
+#contact-text-and-img {
+    width: 58%;
+}
+.contact-contents-div {
+    padding: 30px;
+    background: #ffffff;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border-top: 3px solid #47b2e4;
+    border-bottom: 3px solid #47b2e4;
+    padding: 30px;
+}
+.contact-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+.contact-menu {
+    width: 316px;
+    padding: 0 0 40px;
+    display: flex;
+    flex-direction: row;
+}
+.contact-menu:first-of-type {
+    animation: slide 1s ease-out forwards;
+    animation-delay: 3s;
+    opacity: 0;
+    transform: translateY(50px);
+}
+.contact-menu:nth-last-of-type(2) {
+    animation: slide 1s ease-out forwards;
+    animation-delay: 3.5s;
+    opacity: 0;
+    transform: translateY(50px);
+}
+.contact-menu:last-of-type {
+    animation: slide 1s ease-out forwards;
+    animation-delay: 4s;
+    opacity: 0;
+    transform: translateY(50px);
+}
+.contact-icon {
+    font-size: 20px;
+    color: #47b2e4;
+    background: color-mix(in srgb, #47b2e4, transparent 92%);
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    transition: all 0.2s ease-in-out;
+    margin-right: 15px;
+}
+.contact-menu:hover {
+    .contact-icon {
+        background: #47b2e4;
+        color: #ffffff;
+    }
+}
+.contact-text > h3 {
+    color: #37517E;
+    font: 18px "Jost", sans-serif;
+    font-weight: 700;
+    margin: 0 0 5px;
+}
+.contact-text > p {
+    color: #444444;
+    font: 14px "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    margin: 0;
+}
+#contact-iframe {
+    border: none;
+    width: 100%;
+    height: 270px
+}
+.contact-contents > form {
+    color: #444444;
+    background: #ffffff;
+    padding: 30px;
+    font: 16px "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.contact-right-info {
+    flex: 0 0 auto;
+    margin: 24px 0 0;
+    padding: 0 12px;
+    box-sizing: border-box;
+}
+.contact-right-info > label {
+    display: inline-block;
+    padding: 0 0 8px;
+}
+.contact-info-top {
+    width: 50%;
+}
+.contact-right-info:not(.contact-info-top) {
+    width: 100%;
+}
+.contact-right-info > input, .contact-right-info > textarea {
+    padding: 10px 15px;
+    box-shadow: none;
+    color: #444444;
+    background-color: color-mix(in srgb, #ffffff, transparent 50%);
+    line-height: 1.5;
+    font-weight: 400;
+    border: 1px solid #dee2e6;
+    width: 100%;
+    box-sizing: border-box;
+}
+.contact-right-info > input:focus, .contact-right-info > textarea:focus {
+    outline: none;
+}
+input[type=text]:focus-visible, textarea:focus-visible, input[type=email]:focus-visible {
+    border-color: #47b2e4;
+}
+.contact-right-info > textarea {
+    resize: vertical;
+    min-height: calc(1.5em + .75rem + calc(1px * 2));
+}
+#contact-submit {
+    box-sizing: border-box;
+    width: 100%;
+    height: 44px;
+    text-align: center;
+    justify-content: center;
+    margin: 24px 0 0;
+    padding: 0 12px;
+}
+#contact-submit > button {
+    color: #ffffff;
+    background: #47b2e4;
+    border: 0;
+    padding: 10px 30px;
+    transition: 0.4s;
+    border-radius: 50px;
+    cursor: pointer;
+}
+#contact-submit > button:hover {
+    background: color-mix(in srgb, #47b2e4, transparent 25%);
+}
+/* footer */
 #footer {
     color: #444444;
     padding-bottom: 50px;
